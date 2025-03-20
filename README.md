@@ -42,8 +42,10 @@ This project was developed as part of the **Elastiq AI assessment** to perform *
    ```
 
 ## 📸 Screenshots
-<img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo.png" width="400">
-<img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo2.png" width="400">
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo.png" width="400">
+  <img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo2.png" width="400">
+</div>
 
 ## 🏗 Implementation Approach
 1. **Frontend:** React UI for user input & result display
