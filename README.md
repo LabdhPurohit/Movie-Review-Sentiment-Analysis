@@ -22,7 +22,7 @@ This project was developed as part of the **Elastiq AI assessment** to perform *
 - Responsive UI with Bootstrap & Lucide React
 - Fully containerized application
 
-
+## 📥 Installation Using Docker
 ### Prerequisite: Install Docker
 Before running the application, you need to have **Docker** installed on your system.  
 - **Download & Install Docker:** [Get Docker](https://www.docker.com/get-started)
