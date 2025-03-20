@@ -20,6 +20,12 @@ function App() {
 
   const analyzeSentiment = async (e) => {
     e.preventDefault();
+    if (!review.trim()) {
+      alert("Please enter a review before submitting!");
+      return;
+    }
+    
+    e.preventDefault();
 
     const response = await fetch("https://fastapireviewsentiment-production.up.railway.app/analyze/", {
       method: "POST",
@@ -75,6 +81,7 @@ function App() {
                 <Form.Group className="mb-4">
                   <Form.Control
                     as="textarea"
+
                     rows={4}
                     value={review}
                     onChange={(e) => setReview(e.target.value)}
@@ -87,7 +94,7 @@ function App() {
                     <MessageSquare size={18} className="me-2" />
                     Analyze Sentiment
                   </Button>
-                  <Button type="button" onClick={() => window.location.reload()} className="custom-button ms-3">
+                  <Button type="button" onClick={() => { setReview(""); setPrediction(null); setConfidence(null); setPositiveConfidence(null); setNegativeConfidence(null); }} className="custom-button ms-3">
                   {/* <Button type="button" onClick={clearHistory} className="custom-button"> */}
                     Clear
                   </Button>
