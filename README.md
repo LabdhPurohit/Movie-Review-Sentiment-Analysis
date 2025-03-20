@@ -43,8 +43,8 @@ This project was developed as part of the **Elastiq AI assessment** to perform *
 
 ## 📸 Screenshots
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo.png" width="400">
-  <img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo2.png" width="400">
+  <img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo.png" width="600">
+  <img src="https://raw.githubusercontent.com/LabdhPurohit/Movie-Review-Sentiment-Analysis/refs/heads/main/demo-imgs/demo2.png" width="600">
 </div>
 
 ## 🏗 Implementation Approach
