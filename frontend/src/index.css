@@ -1,0 +1,113 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-bg: #1a1a1a;
+  --secondary-bg: #2d2d2d;
+  --accent-color: #6c5ce7;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --card-bg: #333333;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.custom-textarea {
+  background-color: var(--secondary-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+}
+
+.custom-textarea:focus {
+  box-shadow: 0 0 0 0.25rem rgba(108, 92, 231, 0.25) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+}
+
+.custom-button {
+  background-color: var(--accent-color) !important;
+  border: none !important;
+  padding: 10px 25px !important;
+  border-radius: 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+.custom-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+.history-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.history-card .card-title {
+  color: var(--text-primary);
+}
+
+.history-card .card-text {
+  color: var(--text-secondary);
+}
+
+.confidence-container {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Override Bootstrap dark text */
+.form-control::placeholder {
+  color: var(--text-secondary) !important;
+}
+
+.form-control:focus {
+  color: var(--text-primary) !important;
+  background-color: var(--secondary-bg) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Card text colors */
+.card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+/* Form elements */
+.form-control {
+  color: var(--text-primary) !important;
+  background-color: var(--secondary-bg) !important;
+}
