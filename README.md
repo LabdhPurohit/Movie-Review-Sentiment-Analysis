@@ -1,7 +1,7 @@
 # Movie Review Sentiment Analysis
 
 ## 🚀 Live Site
-(https://review-sentiment-analysis-ashy.vercel.app/)
+[review-sentiment-analysis](https://review-sentiment-analysis-ashy.vercel.app/)
 
 ## 📌 About the Project
 This project was developed as part of the **Elastiq AI assessment** to perform **sentiment analysis on movie reviews** using **Cohere's fine-tuned Classify model**. Users can enter a movie review, and the system will predict whether it is **positive** or **negative**.
