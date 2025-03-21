@@ -85,7 +85,7 @@ body {
   text-align: center;
 }
 
-/* Override Bootstrap dark text */
+
 .form-control::placeholder {
   color: var(--text-secondary) !important;
 }
@@ -96,7 +96,7 @@ body {
   border-color: var(--accent-color) !important;
 }
 
-/* Card text colors */
+
 .card {
   background-color: var(--card-bg) !important;
   color: var(--text-primary) !important;
@@ -106,7 +106,7 @@ body {
   color: var(--text-secondary) !important;
 }
 
-/* Form elements */
+
 .form-control {
   color: var(--text-primary) !important;
   background-color: var(--secondary-bg) !important;
