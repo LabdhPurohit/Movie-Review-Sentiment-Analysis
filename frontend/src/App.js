@@ -18,15 +18,20 @@ function App() {
     setHistory(savedHistory);
   }, []);
 
+  const clearText = () => {
+    setReview("");
+    setPrediction(null);
+    setConfidence(null);
+    setPositiveConfidence(null);
+    setNegativeConfidence(null);
+  }
+
   const analyzeSentiment = async (e) => {
     e.preventDefault();
     if (!review.trim()) {
       alert("Please enter a review before submitting!");
       return;
     }
-    
-    e.preventDefault();
-
     const response = await fetch("http://127.0.0.1:8000/analyze/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -47,7 +52,7 @@ function App() {
     setConfidence((data.confidence * 100).toFixed(2));
     setPositiveConfidence((data.labels.positive.confidence * 100).toFixed(2));
     setNegativeConfidence((data.labels.negative.confidence * 100).toFixed(2));
-    // setReview("");
+
 
     const newHistory = [...history, {
       review,
@@ -63,7 +68,7 @@ function App() {
   const clearHistory = () => {
     setHistory([]);
     localStorage.removeItem("reviewHistory");
-    // window.location.reload();
+   
   };
 
   return (
@@ -94,8 +99,8 @@ function App() {
                     <MessageSquare size={18} className="me-2" />
                     Analyze Sentiment
                   </Button>
-                  <Button type="button" onClick={() => { setReview(""); setPrediction(null); setConfidence(null); setPositiveConfidence(null); setNegativeConfidence(null); }} className="custom-button ms-3">
-                  {/* <Button type="button" onClick={clearHistory} className="custom-button"> */}
+                  <Button type="button" onClick={clearText} className="custom-button ms-3">
+                    <Trash2 size={18} className="me-2" />
                     Clear
                   </Button>
                 </div>
@@ -142,7 +147,7 @@ function App() {
           </Col>
         </Row>
 
-        {/* History Section */}
+       
         <Row className="justify-content-center mt-5">
           <Col md={10}>
             <div className="d-flex justify-content-between align-items-center mb-4">
